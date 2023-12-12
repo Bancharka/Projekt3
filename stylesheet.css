@@ -11,7 +11,7 @@ body {
 
 h1 {
     font-size: 52px;
-    color: #000;
+    color: #ebebeb;
     font-family: 'Nova Square', sans-serif;
     line-height: 32px;
     text-transform: uppercase;
@@ -19,27 +19,27 @@ h1 {
 
 h2 {
     font-size: 45pt;
-    color: #000;
+    color: #EBEBEB;
     font-family: 'Nova Square', sans-serif; 
 
 }
 
 h3 {
     font-size: 38pt;
-    color: #fff;
+    color: #ebebeb;
     font-family: 'Nova Square', sans-serif;
     
 }
 
 h4 {
     font-size: 32pt;
-    color: #fff;
+    color: #ebebeb;
     font-family: 'Nova Square', sans-serif;  
 }
 
 h5 {
     font-size: 25pt;
-    color: #fff;
+    color: #ebebeb;
     font-family: 'Nova Square', sans-serif;  
 }
 
@@ -77,6 +77,7 @@ z-index: 1000;
 @media (max-width : 500px){
 .header-main {
     flex-direction: column;
+    position: relative;
     
 }
 
@@ -120,7 +121,6 @@ z-index: 1000;
 
 
 .header-main-nav ul {
-    margin-left: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,7 +162,6 @@ font-size: 24px;
 .header-main-sm {
     min-width: 120px;
     height: 100%;
-    padding-right: 60px;
     display: flex;
     align-items: center;
     justify-self: center;
@@ -182,8 +181,7 @@ background-size: cover;
     .header-main-sm {
         justify-content: center;
         margin-bottom: 5px;
-        width: 1
-        align-items: center;
+        align-items:  center;
         justify-self: center;
     }
 
@@ -198,10 +196,45 @@ background-size: cover;
 /* INDHOLD TIL FORSIDE */
 /* INDHOLD TIL FORSIDE */
 
+
+main {
+    width: 100%;
+    
+    margin-top: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.main-intro {
+   
+}
+
+.main-intro h1{
+    line-height: 50px;
+    align-self: center;
+}
+
+.forside-img img{
+    
+
+}
+
+.ekstra h3 {
+    font-size: 30px;
+
+}
+
+
+
+
+
+/*
 .main-index {
     width: 100%;
     height: calc(100vh - 60px);
-    /*background-color: rgb(0, 63, 63);  */
     margin-top: 60px;
     background-image: url(./billeder/oliver-petersen123123.png) ;
     background-size: 40em;
@@ -214,7 +247,13 @@ background-size: cover;
 
 }
 
+@media (max-width:500px){
+    .main-index {
+        background-size: 20em;
+        margin-top: 340px;
+    }
 
+}
 
 
 
@@ -268,7 +307,7 @@ background-size: cover;
     font-weight: 900;
     
 }
-
+*/
 
 
 
@@ -287,7 +326,7 @@ background-size: cover;
     justify-content: center;
     column-gap: 40px;
     row-gap: 40px;
-    margin-top:400px;
+    margin-top:200px;
     flex-wrap: wrap;
 
 }
@@ -527,58 +566,53 @@ background-size: cover;
 /* HER STYLES KONTAKTSIDEN */
 
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr  ;
-    grid-template-rows: 200px 200px 200px;
-    margin-top: 60px;
-    grid-gap: 8px;
-    color: white;
-
-}
-
-
-.container > div {
+.kontakt-section {
+    width: 100%;
+    padding: 78px 0px;
+    margin-top: 400px; 
     display: flex;
+    flex-wrap: wrap;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
-    text-align: center;
-    margin-right: 20px;
-    margin-left: 20px;
+}
+
+.kontakt.txt {
+    max-width: 550px;
+    
+    
+}
+
+.kontaktmåde {
+   max-width: 550px;
+    margin-top: 40px;
+    border-bottom: goldenrod solid;
+    border-radius: 30px;
+    padding: 20px;
     
     
     
 }
 
-.container > div:nth-child(1) {
-    background-color: none  	
-  }
-  
-  .container > div:nth-child(2) {
-        background-color: none;
-  }
-  
-  .container > div:nth-child(3) {
-    text-align: center;
-    border-right: 8px solid darkgoldenrod;
-    border-bottom: 8px solid darkgoldenrod;
-    
-  }
-  
-  .container > div:nth-child(4) {
-    text-align: left;
-    border-left: 8px solid darkgoldenrod;
-    border-top: 8px solid darkgoldenrod;
-  }
- 
+.kontakt-section p {
+    font-size: 24px;
+    line-height: 28px;
+}
 
-  .container p {
-    font-size: 32px;
-    color: white;
-    line-height: 35px;
-    padding-left: 20px;
 
-  }
-  
+@media (min-width: 640px){
 
+.kontakt-section {
+    flex-direction: column;
+    margin-top: 60px;
+
+}
+
+.kontakt-txt p {
+    font-size: 42px;
+    padding: 60px;
+    line-height: 45px;
+}
+
+
+}
