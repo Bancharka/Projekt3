@@ -175,7 +175,7 @@ font-size: 24px;
 .header-main-sm-in {
 width: 40px;
 height: 40px;
-background-image: url(billeder/instagram.png);
+background-image: url(/billeder/instagram.png);
 background-repeat: no-repeat;
 background-size: cover;
 
@@ -238,9 +238,16 @@ main {
     display: flex;
     flex-direction: column;
     max-width: 300px;
+    margin-top: 130px;
 
 }
 
+@media (max-width:500px) {
+
+    .ekstra {
+        margin-top: 0px;
+    }
+}
 
 
 .ekstra h3 {
@@ -304,9 +311,8 @@ main {
    color: white;
    padding-bottom: 50px;
    flex-basis: 100%;
-   font-size: 40px;
    text-align: center;
-   line-height: 40px;
+   line-height: 50px;
    
 }
 
@@ -435,16 +441,93 @@ main {
 
 
 
+/* HER STYLES FOTOGRAFI */
+/* HER STYLES FOTOGRAFI */
+/* HER STYLES FOTOGRAFI */
 
 
-/* BILLED GALLERI PÅ OM MIG */
-/* BILLED GALLERI PÅ OM MIG */
-/* BILLED GALLERI PÅ OM MIG */
+.beskrivelse  {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0px 5px 0 5px;
+    border-radius: 10px;
+    
+    
+    
+}
+
+.canon {
+    color: rgb(160, 0, 0);
+
+}
+
+.nikon {
+    color: rgb(18, 0, 180);
+}
+
+
+
+.beskrivelse p {
+    color: black;
+    background-color: #EBEBEB;
+    padding: 20px 5px 20px 5px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (min-width:500px) {
+    .beskrivelse {
+        margin-top: 300px;
+        
+
+    }
+
+.beskrivelse p {
+    max-width: 600px;
+}
+
+@media (min-width:680px) {
+.beskrivelse {
+    margin-top: 150px;
+}
+
+}
+
+
+@media (min-width:1116px){
+
+.beskrivelse {
+    margin-top: 75px;
+}
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+/* BILLED GALLERI PÅ FOTOGRAFI */
+/* BILLED GALLERI PÅ FOTOGRAFI */
+/* BILLED GALLERI PÅ FOTOGRAFI */
 
 .billedo h1 {
     color: #EBEBEB;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     line-height: 45px;
+    display: flex;
+    justify-content: center;
    
 
 }
@@ -510,7 +593,7 @@ main {
     
 }
 
-@media (max-width:500px){
+@media (max-width:615px){
     .billedserie {
         display: contents;
         
