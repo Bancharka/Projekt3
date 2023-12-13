@@ -1,10 +1,9 @@
 
 
 body {
-    background-image: url(./billeder/tinyinfinity.png);
+    background-image: url(/billeder/tinyinfinity.png);
     background-color:  rgb(0, 63, 63);
-    
-    
+        
 }
 
 
@@ -218,7 +217,12 @@ main {
 
 .main-intro h1{
     line-height: 50px;
-    align-self: center;
+    margin-left: 15px;
+    
+}
+
+.main-intro span{
+    color: rgb(187, 17, 17);
     
 }
 
@@ -230,106 +234,42 @@ main {
     
 }
 
+.ekstra {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+
+}
+
+
+
 .ekstra h3 {
     font-size: 30px;
+    
 
 }
 
 .ekstra p {
-    border-left: 3px goldenrod solid ;
-    padding-left: 5px;
+    border-left: 5px goldenrod solid ;
+    padding: 10px 10px 10px 10px;
     margin-bottom: 50px;
-    background-color: rgb(9, 9, 94);
+    background-color: #ebebeb;
+    color: black;
+    border-radius: 2px;
     
 }
  @media (min-width:500px){
+    .forside-img {
+        margin-bottom: 0px;
+    }
 
-main {
-    
-}
 
 
  }
 
 
 
-/*
-.main-index {
-    width: 100%;
-    height: calc(100vh - 60px);
-    margin-top: 60px;
-    background-image: url(./billeder/oliver-petersen123123.png) ;
-    background-size: 40em;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
 
-}
-
-@media (max-width:500px){
-    .main-index {
-        background-size: 20em;
-        margin-top: 340px;
-    }
-
-}
-
-
-
-.main-intro h1 {
-    font-size: 64px;
-    line-height: 60px ;
-    color: white;
-}
-
-.main-intro p, .main-quotes p  {
-    font-size: 22px;
-    line-height: 24px ;
-    color: white;
-    
-    
-    
-}
-
-
-.main-intro a {
-    margin-top: 30px;
-    font-size: 30px;
-    display: block;
-    background-color: darkgoldenrod;
-    padding: 10px 15px;
-    width: fit-content;
-   
-}
-
-
-
-.main-quotes p {
-    border-left: 4px solid darkgoldenrod;
-    padding: 20px;
-    margin: 10px 0;
-    max-width: fit-content;
-}
-
-.main-intro {
-    position: relative;
-   right: 10vh; 
-}
-
-.main-quotes {
-    position: relative;
-    left: 30vh;
-        
-}
-
-.fanger {
-    font-weight: 900;
-    
-}
-*/
 
 
 
@@ -348,10 +288,17 @@ main {
     justify-content: center;
     column-gap: 40px;
     row-gap: 40px;
-    margin-top:200px;
+    margin-top: 20px;
     flex-wrap: wrap;
 
 }
+
+@media (min-width:500px){
+    .portfolio-category-1{
+        margin-top: 200px;
+    }
+}
+
 
 .portfolio-category-1 h2 {
    color: white;
@@ -386,6 +333,8 @@ main {
     
 }
 
+
+
 .portfolio-category-box h3 {
     text-shadow: 4px 4px 8px #000;
     line-height: 48px;
@@ -418,10 +367,11 @@ main {
 
 }
 
-@media (max-width:500px){
+@media (max-width:680px){
 .about img {
-    margin-top: 300px;
+    margin-top: 100px;
 }
+
 
 }
 
@@ -537,6 +487,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-auto-rows: 300px;
     grid-auto-flow: dense;
+    
     
 }
 
