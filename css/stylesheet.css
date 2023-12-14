@@ -50,7 +50,7 @@ p {
     font-family: 'Quicksand', sans-serif;
     line-height: 18px;
     font-weight: 600;
-    
+    letter-spacing: 0.1px;
 
 }
 
@@ -141,13 +141,14 @@ z-index: 1000;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 
 
 .header-main-nav ul li {
     display: inline;
     float: left;
-    
+    height: 64px;
 }
 
 
@@ -277,8 +278,9 @@ main {
     }
 
 
-
 }
+
+
 
 
 .ekstra h3 {
@@ -301,10 +303,35 @@ main {
         margin-bottom: 0px;
     }
 
-
+    .main-intro {
+        margin-top: 250px;
 
  }
 
+@media (min-width:768px){
+    .main-intro {
+        margin-top: 100px;
+    }
+}
+
+@media (min-width:1177px){
+    .main-intro {
+        margin-top: 0px;
+    }
+
+}
+
+@media (min-width:1176px){
+    .forside-img img {
+        height: 700px;
+    }
+}
+
+@media (min-width:1477px){
+    .forside-img img {
+        height: 1000px;
+    }
+}
 
 
 
@@ -331,9 +358,21 @@ main {
 
 }
 
-@media (min-width:500px){
+@media (min-width:501px){
     .portfolio-category-1{
-        margin-top: 200px;
+        margin-top: 300px;
+    }
+}
+
+@media (min-width:677px){
+    .portfolio-category-1{
+        margin-top: 170px;
+    }
+}
+
+@media (min-width:1117px){
+    .portfolio-category-1{
+        margin-top: 130px;
     }
 }
 
@@ -392,7 +431,7 @@ main {
 
 .about  {
     width: 100%;
-    padding: 78px 0px;
+    padding-top: 78px ;
     
 }
 
@@ -404,11 +443,24 @@ main {
 
 }
 
-@media (max-width:680px){
+@media (min-width:500px){
 .about img {
-    margin-top: 100px;
+    margin-top: 200px;
+}
 }
 
+
+@media (min-width:680px){
+    .about img {
+        margin-top: 100px;
+    }
+
+}
+
+@media (min-width:1022px){
+    .about img {
+        margin-top: 0px;
+    }
 
 }
 
@@ -426,6 +478,22 @@ main {
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+@media (min-width:1022px){
+    .main-about {
+        margin-top: 100px;
+    }
+
+}
+
+@media (min-width:1117px){
+    .main-about {
+        margin-top: 70px;
+    }
+
+}
+
+
 .about-txt h1 {
     color: #EBEBEB;
     font-size: 70px;
@@ -469,6 +537,10 @@ main {
     border-radius: 10px;
     padding: 10px;
     letter-spacing: 0.1px;
+    
+}
+
+
 }
 
 .designer {
@@ -661,7 +733,7 @@ main {
 .kontakt-section {
     width: 100%;
     padding: 78px 0px;
-    margin-top: 400px; 
+    margin-right: 10px;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -669,7 +741,7 @@ main {
     align-items: center;
 }
 
-.kontakt.txt {
+.kontakt-txt {
     max-width: 550px;
     
     
@@ -678,9 +750,11 @@ main {
 .kontaktmåde {
    max-width: 550px;
     margin-top: 40px;
-    border-bottom: goldenrod solid;
-    border-radius: 30px;
+    border-left: 5px goldenrod solid;
+    border-radius: 10px;
     padding: 20px;
+    background-color: #EBEBEB;
+    
     
     
     
@@ -689,6 +763,13 @@ main {
 .kontakt-section p {
     font-size: 24px;
     line-height: 28px;
+    color: black;
+}
+
+@media (min-width:500px) {
+    .kontakt-section {
+        margin-top: 200px;
+    }
 }
 
 
@@ -743,6 +824,7 @@ main {
     margin: 30px 5px 0px 5px ;
     border-radius: 10px;
     
+    
 }
 
 .beskriv h1 {
@@ -784,14 +866,26 @@ main {
 }
 
 
+@media (min-width:500px){
+    .after {
+        margin-top: 270px;
+    }
 
+
+}
+
+@media (min-width:768px){
+    .after {
+        margin-top: 150px;
+    }
+
+
+}
 
 @media (min-width:1120px){
     .after {
         margin-top: 100px;
     }
-
-
 
 
 }
@@ -835,12 +929,124 @@ main {
 }
 
 
+/* HER STYLES PHOTOSHOP */
+/* HER STYLES PHOTOSHOP */
+/* HER STYLES PHOTOSHOP */
 
 
 
 
+.billedefig {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+   
+}
+
+.maleriet {
+    margin-bottom: 30px;
+    margin: 30px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+        
+}
 
 
+@media (min-width:500px){
+
+
+.billedefig {
+    flex-direction: row;
+}
+
+}
+
+@media (min-width:860px){
+    .maleriet {
+        flex-direction: row;
+    
+    }
+
+}
+
+
+/* HER STYLES PIXELART */
+/* HER STYLES PIXELART */
+/* HER STYLES PIXELART */
+
+.spritebox {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+.sprite {
+    width: 500px;
+    height: 500px;
+    background: url(/billeder/ildanimation3.png) 0 0 no-repeat;
+    animation: play 1.5s steps(11) infinite;
+    
+    
+
+}
+
+.sprite11 {
+    padding: 10px
+}
+.sprite11 img{
+    margin-top: 30px;
+    
+}
+
+@media (max-width:500px){
+    .sprite11 img{
+        max-width: 400px;
+        
+    }
+
+    
+}
+
+@keyframes play {
+    0% { background-position: 0px;}
+    100% { background-position: -5500px;}
+}
+
+
+
+/* HER STYLES VOICEOVER */
+/* HER STYLES VOICEOVER */
+/* HER STYLES VOICEOVER */
+
+
+
+.lydboks {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.linkaf {
+    text-decoration: underline;
+    color: blue;
+}
+
+#vo {
+    margin: 0px 5px 20px 5px;
+    text-align: center;
+}
+
+.lyd {
+    display: flex;
+    text-align: center;
+}
 
 
 
