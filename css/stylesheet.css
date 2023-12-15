@@ -418,7 +418,7 @@ main {
 }
 
 .portfolio-category-box:hover {
-    background-color: black;
+    background-color: #2055DA;
     transition: 0.2s;
 }
 
