@@ -93,7 +93,7 @@ z-index: 1000;
 }
 
 }
------header flex column direction 
+
 .header-main-logo {
    width: fit-content;
     height: 100%;
@@ -307,8 +307,9 @@ main {
         margin-top: 250px;
 
  }
+}
 
-@media (min-width:768px){
+ @media (min-width:768px){
     .main-intro {
         margin-top: 100px;
     }
@@ -507,7 +508,7 @@ main {
 .about-txt h1 {
     text-align: center;
     margin-top: 20px;
-
+    
 }
 }
 
@@ -541,7 +542,7 @@ main {
 }
 
 
-}
+
 
 .designer {
     color: rgb(187, 17, 17);
@@ -599,6 +600,8 @@ main {
 .beskrivelse p {
     max-width: 600px;
 }
+}
+
 
 @media (min-width:680px) {
 .beskrivelse {
@@ -618,7 +621,7 @@ main {
 
 
 
-}
+
 
 
 
@@ -754,7 +757,8 @@ main {
     border-radius: 10px;
     padding: 20px;
     background-color: #EBEBEB;
-    
+    margin-right: 10px;
+    margin-left: 10px;
     
     
     
@@ -770,7 +774,17 @@ main {
     .kontakt-section {
         margin-top: 200px;
     }
+    
+
 }
+
+@media (max-width:500px){
+.kontakt-txt h3 {
+    font-size: 40px;    
+}
+
+}
+
 
 
 @media (min-width: 640px){
